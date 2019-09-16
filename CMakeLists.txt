@@ -3,4 +3,4 @@ project(project1OScpp)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(project1OScpp main.cpp cpu.h cpu.cpp)
+add_executable(project1OScpp main.cpp cpu.h cpu.cpp memory.cpp memory.h)
