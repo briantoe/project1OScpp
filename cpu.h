@@ -5,6 +5,9 @@
 #ifndef PROJECT1OSCPP_CPU_H
 #define PROJECT1OSCPP_CPU_H
 
+#include <string>
+#include <fstream>
+
 class cpu{
 private:
     int program_counter; // PC
@@ -16,8 +19,19 @@ private:
 
     // maybe a var to hold a memory class
 
+    int instruction;
+    std::istream *input;
 public:
-    cpu();
+    cpu(std::string input_file);
+    void run();
+
+
+    void fetch(); // grabs next instruction
+    void execute(); // runs next instruction loaded
+
+    void load_value(); // load value into the ac (accumulator)
+    void load_addr(); // load address of
+    void loadInd_addr();
 
 
 };
