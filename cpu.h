@@ -27,6 +27,10 @@ private:
     std::ifstream input;
 public:
     cpu(std::string input_file);
+    ~cpu() {
+
+    }
+
     void run();
 
 

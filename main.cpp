@@ -20,11 +20,6 @@ int main(int argc, char** argv)
     {
 
         cout << instruction << endl;
-        switch(instruction)
-        {
-            case 1:
-
-        }
 
         input.ignore(UINT_MAX, '\n');
 
