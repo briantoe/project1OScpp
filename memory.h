@@ -17,6 +17,10 @@ private:
 
 public:
     memory(std::string input);
+    void print();
+    int read(int address);
+    void write(int address, int data);
+
 };
 
 

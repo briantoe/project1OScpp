@@ -16,13 +16,28 @@ memory::memory(std::string input) {
 
         if (line[0] == '.') {
             ss >> index;
+            printf("%d\n", index);
         }
         else
         {
             ss >> instruction;
-
+            printf("%d\n", instruction);
         }
 
-
     }
+
+}
+
+void memory::print() {
+
+
+
+}
+
+int memory::read(int address) {
+    return program[address];
+}
+
+void memory::write(int address, int data) {
+    program[address] = data;
 }
